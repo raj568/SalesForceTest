@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.salesforce.qa.base.TestBase;
 import com.salesforce.qa.pages.Loginpage;
-import com.salesforce.qa.utils.Readingpropertiesfile;
+
 
 public class LoginPageTest extends TestBase {
 	Loginpage loginpage;
