@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20906" started-at="2020-02-25T02:41:34Z" finished-at="2020-02-25T02:41:54Z">
+  <suite name="Default suite" duration-ms="31577" started-at="2020-02-28T18:42:03Z" finished-at="2020-02-28T18:42:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20906" started-at="2020-02-25T02:41:34Z" finished-at="2020-02-25T02:41:54Z">
+    <test name="Default test" duration-ms="31577" started-at="2020-02-28T18:42:03Z" finished-at="2020-02-28T18:42:35Z">
       <class name="com.salesforce.qa.testcases.Bestbuy1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.salesforce.qa.testcases.Bestbuy1@5e5792a0]" name="setup" is-config="true" duration-ms="18030" started-at="2020-02-25T02:41:34Z" finished-at="2020-02-25T02:41:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.salesforce.qa.testcases.Bestbuy1@5e5792a0]" name="setup" is-config="true" duration-ms="28556" started-at="2020-02-28T18:42:03Z" finished-at="2020-02-28T18:42:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="signintest()[pri:0, instance:com.salesforce.qa.testcases.Bestbuy1@5e5792a0]" name="signintest" duration-ms="2811" started-at="2020-02-25T02:41:52Z" finished-at="2020-02-25T02:41:54Z">
+        <test-method status="FAIL" signature="signintest()[pri:0, instance:com.salesforce.qa.testcases.Bestbuy1@5e5792a0]" name="signintest" duration-ms="2935" started-at="2020-02-28T18:42:32Z" finished-at="2020-02-28T18:42:35Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <button id="button1" onclick="if (!window.__cfRLUnblockHandlers) return false; newBrwWin()">...</button> is not clickable at point (409, 555). Other element would receive the click: <div id="cookie-law-info-bar" style="background-color: rgb(61, 130, 191); color: rgb(255, 255, 255); font-family: Verdana, Geneva; bottom: 0px; position: fixed; display: block;">...</div>
@@ -19,8 +19,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-769CRJCU', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\NITU_D~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7de2f9ab9532136c3256b805b0d23d3f]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\NITU_D~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 23b7280861a23e9165ac796d1f397007]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="button1" onclick="if (!window.__cfRLUnblockHandlers) return false; newBrwWin()">...</button> is not clickable at point (409, 555). Other element would receive the click: <div id="cookie-law-info-bar" style="background-color: rgb(61, 130, 191); color: rgb(255, 255, 255); font-family: Verdana, Geneva; bottom: 0px; position: fixed; display: block;">...</div>
@@ -28,8 +28,8 @@ Session ID: 7de2f9ab9532136c3256b805b0d23d3f]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-769CRJCU', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\NITU_D~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7de2f9ab9532136c3256b805b0d23d3f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\NITU_D~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 23b7280861a23e9165ac796d1f397007
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)

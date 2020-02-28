@@ -26,7 +26,7 @@ public class Bestbuy1 {
 	public void signintest() throws InterruptedException
 	{
 		System.out.println("parent Handle"+driver.getWindowHandle());
-		WebElement clickelement=driver.findElement(By.id("button1"));
+		WebElement clickelement=driver.findElement(By.xpath("//*[@id='button1']"));
 		for(int i=0;i<3;i++)
 		{
 			clickelement.click();
