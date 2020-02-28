@@ -1,3 +1,4 @@
+
 package com.salesforce.qa.testcases;
 
 import org.testng.Assert;
@@ -17,7 +18,7 @@ public class LoginPageTest extends TestBase {
 	
 	 
 	
-	@Test(priority=3)
+	@Test(priority=3, groups="Title")
 	public void loginPageTitileTest()
 	{
 		logger.info("testcase1");
@@ -26,7 +27,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(title, "AdactIn.com - Search Hotel");
 		
 	}
-	@Test(priority=2)
+	@Test(priority=2,groups="Title")
 	public void loginPageUrlTest()
 	{
 		logger.info("testcase2");
@@ -39,9 +40,7 @@ public class LoginPageTest extends TestBase {
 	public void loginTest()
 	{
 		loginpage=new Loginpage();
-		loginpage.setusername(un);
-		loginpage.setpassword(pwd);
-		loginpage.clicksubmit();
+		loginpage.login(un,pwd);
 		
 	}
 

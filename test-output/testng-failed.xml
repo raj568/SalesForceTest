@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.salesforce.qa.testcases.LoginPageTest">
+      <class name="com.salesforce.qa.testcases.Bestbuy1">
         <methods>
-          <include name="loginPageTitileTest"/>
-          <include name="initialization"/>
-          <include name="teardown"/>
+          <include name="signintest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.salesforce.qa.testcases.LoginPageTest -->
+      </class> <!-- com.salesforce.qa.testcases.Bestbuy1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

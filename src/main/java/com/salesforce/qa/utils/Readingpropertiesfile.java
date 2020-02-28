@@ -13,7 +13,7 @@ public Readingpropertiesfile()
 {
 	try{
 		prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\webdriverkit\\workspace2\\SalesforceTest\\configurations\\config.properties");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\configurations\\config.properties");
 	prop.load(fis);
 	}catch(FileNotFoundException e){
 		e.printStackTrace();	
@@ -22,6 +22,7 @@ public Readingpropertiesfile()
 		e.printStackTrace();
 	}
 }
+
 public String getbrowsername()
 {
 	String browserName= prop.getProperty("browser");
@@ -42,5 +43,10 @@ public String getpassword()
 {
 	String pwd=prop.getProperty("password");
 	return pwd;
+}
+public String getChromepath() {
+	// TODO Auto-generated method stub
+	String chromepath=prop.getProperty("Chromepath");
+	return chromepath;
 }
 }

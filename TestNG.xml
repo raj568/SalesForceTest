@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SalesforceTestSuit">
+<test name="Functional Test">
+<parameter name="browser" value="chrome"/>
+<classes>
+
+<!--  <class name="com.salesforce.qa.testcases.Createusertest" />
+<class name="com.salesforce.qa.testcases.Testng1featureTest" />
+<class name="com.salesforce.qa.testcases.LoginPageTest" />
+-->
+<class name="com.salesforce.qa.testcases.ActionclassTest" />
+
+</classes>
+</test>
+</suite>

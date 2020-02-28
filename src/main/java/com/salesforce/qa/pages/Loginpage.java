@@ -38,16 +38,13 @@ public class Loginpage extends TestBase {
 		return driver.getCurrentUrl();
 		
 	}
-	public void setusername(String uname){
+	public void login(String uname,String pwd){
 		username.sendKeys(uname);
-	}
-	public void setpassword(String pwd)
-	{
 		password.sendKeys(pwd);
-	}
-
-public void clicksubmit(){
-	login.click();
+		login.click();
 }
+
+
+	
 
 }

@@ -1,10 +1,4 @@
 package com.salesforce.qa.base;
-
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -13,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import com.salesforce.qa.utils.Readingpropertiesfile;
 import com.salesforce.qa.utils.Testutil;
@@ -24,29 +19,31 @@ public String url;
 public String browser ;
 public String un;
 public String pwd;
+public String chromepath;
 public TestBase(){
 	
 
 	 Readingpropertiesfile readconfig=new Readingpropertiesfile();
 	  url=readconfig.getUrlname();
-	   browser=readconfig.getbrowsername();
+	   //browser=readconfig.getbrowsername();
 	  un=readconfig.getusername();
 	  pwd=readconfig.getpassword();
+	  chromepath=readconfig.getChromepath();
 }
+	  
 	
 	
-	
+	@Parameters("browser")
 	@BeforeClass
-	public  void initialization()
+	public  void initialization(String browser)
 	{
 		
 		if(browser.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",chromepath);
 			driver=new ChromeDriver();
 		}
-		// else if(browserName.equals("firefox"))
-		//{System.set.property("webdriver.gecko.driver","") driver=new geckodriver(()
+		
 logger=Logger.getLogger("TestBase");
 PropertyConfigurator.configure("Log4j.properties");
 		driver.manage().window().maximize();
